@@ -48,6 +48,7 @@
          &:hover {
             color: white;
             background-color: red;
+            border: none;
 
          }
 
@@ -58,72 +59,79 @@
 }
 
 .banner {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   margin: 0 auto;
    padding-top: 30px;
-   gap: 20px;
-     justify-content: space-between;
 
-   .cart {
-      width: 473.863px;
-      height: 100%;
-      position: relative;
+   .container-cards {
+      max-width: 1158px;
+      height: 800px;
+      .cards {
+         display:flex;
+         justify-content: space-between;
+         
 
-      a {
-         img{
-            overflow: hidden;
-            object-fit: cover;
-            transition: all 0.3s easy 0;
-         }
+         .cart {
+            position: relative;
+            width: 200px;
 
-         & :hover {
-            opacity: 0.85;
-         }
-      }
+            // a {
 
-      .content {
-         position: absolute;
-         top: 18%;
-         left: 10%;
+            //    & :hover {
+            //       opacity: 0.85;
+            //    }
 
-         h4 {
-            font-size: 19px;
-            line-height: 26px;
-            color: #333333;
-            font-weight: 400;
-            margin-bottom: .5rem;
-         }
+               img {
+                  
+                  overflow: hidden;
+                  object-fit: cover;
+                  transition: all 0.3s easy 0;
+               }
 
-         h3 {
-            font-size: 26px;
-            line-height: 30px;
-            color: #333333;
-            margin-bottom: 5px;
-            font-weight: 500;
-         }
 
-         .button-left-sidebar {
-            font-size: 14px;
-            color: #808080;
-            line-height: 1;
-            display: inline-block;
-            margin-top: 20px;
-            &:hover{
-               color: red;
+            }
 
-               i{
-                  font-size: 16px;
-                  color: #ee3333;
+            .content {
+               position: absolute;
+               top: 18%;
+               left: 10%;
+
+               h4 {
+                  font-size: 19px;
+                  line-height: 26px;
+                  color: #333333;
+                  font-weight: 400;
+                  margin-bottom: .5rem;
+               }
+
+               h3 {
+                  font-size: 26px;
+                  line-height: 30px;
+                  color: #333333;
+                  margin-bottom: 5px;
+                  font-weight: 500;
+               }
+
+               .button-left-sidebar {
+                  font-size: 14px;
+                  color: #808080;
+                  line-height: 1;
                   display: inline-block;
-                  margin-left: 5px;
-                  vertical-align: middle;
-              } 
+                  margin-top: 20px;
+
+                  &:hover {
+                     color: red;
+                  }
+
+                  i {
+                     font-size: 16px;
+                     color: #ee3333;
+                     display: inline-block;
+                     margin-left: 5px;
+                     vertical-align: middle;
+                  }
+
                }
             }
          }
       }
    }
-
-
+}

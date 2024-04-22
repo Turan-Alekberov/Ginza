@@ -153,64 +153,128 @@ header .nav-bar li a:hover {
 .info .container2 .button:hover {
   color: white;
   background-color: red;
+  border: none;
 }
 
 .banner {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin: 0 auto;
   padding-top: 30px;
-  gap: 20px;
+}
+.banner .container-cards {
+  max-width: 1158px;
+  height: 800px;
+}
+.banner .container-cards .cards {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  flex-direction: row;
 }
-.banner .cart {
-  width: 473.863px;
-  height: 100%;
+.banner .container-cards .cards .cart {
   position: relative;
+  width: 33%;
 }
-.banner .cart a img {
+.banner .container-cards .cards .cart a :hover {
+  opacity: 0.85;
+}
+.banner .container-cards .cards .cart a img {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.3s easy 0;
 }
-.banner .cart a :hover {
-  opacity: 0.85;
-}
-.banner .cart .content {
+.banner .container-cards .cards .cart .content {
   position: absolute;
   top: 18%;
   left: 10%;
 }
-.banner .cart .content h4 {
+.banner .container-cards .cards .cart .content h4 {
   font-size: 19px;
   line-height: 26px;
   color: #333333;
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
-.banner .cart .content h3 {
+.banner .container-cards .cards .cart .content h3 {
   font-size: 26px;
   line-height: 30px;
   color: #333333;
   margin-bottom: 5px;
   font-weight: 500;
 }
-.banner .cart .content .button-left-sidebar {
+.banner .container-cards .cards .cart .content .button-left-sidebar {
   font-size: 14px;
   color: #808080;
   line-height: 1;
   display: inline-block;
   margin-top: 20px;
 }
-.banner .cart .content .button-left-sidebar:hover {
+.banner .container-cards .cards .cart .content .button-left-sidebar:hover {
   color: red;
 }
-.banner .cart .content .button-left-sidebar:hover i {
+.banner .container-cards .cards .cart .content .button-left-sidebar i {
   font-size: 16px;
   color: #ee3333;
   display: inline-block;
   margin-left: 5px;
   vertical-align: middle;
+}
+
+.best-products {
+  border-top: 1px solid #ebebeb;
+  padding-top: 70px;
+}
+.best-products .container {
+  width: 1200px;
+  height: 509.6px;
+  margin: 0 auto;
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.best-products .container .product-title {
+  width: 25%;
+  text-align: center;
+}
+.best-products .container .product-title h3 {
+  font-size: 21px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.best-products .container .product-title h2 {
+  font-size: 39px;
+  line-height: 1.2;
+  color: #929292;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.best-products .container .tablist li {
+  text-align: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 23px 25px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  background-color: #f0f0f0;
+}
+.best-products .container .tablist li:hover {
+  background-color: #ee3333;
+}
+.best-products .container .tablist li:hover a {
+  color: #f0f0f0;
+}
+.best-products .container .tablist li a {
+  font-size: 18px;
+  color: #292929;
+}
+.best-products .container .tablist .active {
+  background-color: #ee3333;
+}
+.best-products .container .tablist .active a {
+  color: #f0f0f0;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,83 @@
+.best-products {
+   border-top: 1px solid #ebebeb;
+   padding-top: 70px;
+
+
+
+   .container {
+      width: 1200px;
+      height: 509.600px;
+      margin: 0 auto;
+      border-top: 1px solid #ebebeb;
+      border-left: 1px solid #ebebeb;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 35px;
+
+
+
+
+
+      .product-title {
+         width: 25%;
+         text-align: center;
+
+         h3 {
+            font-size: 21px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 500;
+
+         }
+
+         h2 {
+            font-size: 39px;
+            line-height: 1.2;
+            color: #929292;
+            margin-bottom: 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+         }
+      }
+
+      .tablist {
+
+         li {
+
+            text-align: center;
+            border-bottom: 1px solid #e3e3e3;
+            padding: 23px 25px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            background-color: #f0f0f0;
+
+            &:hover {
+               background-color: #ee3333;
+
+               a {
+                  color: #f0f0f0;
+               }
+            }
+
+            a {
+               font-size: 18px;
+               color: #292929;
+
+
+            }
+
+         }
+
+         .active {
+            background-color: #ee3333;
+
+            a {
+               color: #f0f0f0;
+            }
+         }
+      }
+   }
+}
